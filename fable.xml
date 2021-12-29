@@ -1,6 +1,1083 @@
 <fable>
-	<page>
   
+  <page background="street.png" soundtrack="florest.wav" >  
+    <agent img="car.png" 
+      x="30"  y="27" width="150" height="150"/>
+    <agent img="seta_direita.png" 
+      x="420" y="-200" width="64"  height="64" on-touch="_NEXT_PAGE" on-trigger="nextpage">
+      <nextpage y="12"/>
+    </agent>
+    
+    <agent text="Duas crianças foram para a casa dos avós nas ferias. Eles estavam bastante animados, fazendo planos para suas brincadeiras" 
+           x="20" y="420"  width="300" color="black" on-touch="text1" >
+      <text1 y="-300"/>
+    </agent>
+    
+    <agent text="Lembre-se de tocar os balões de fala para que os dialogos sejam exibidos."
+           x="20" y="-300" width="300" color="black" on-trigger="text1" on-touch="nextpage">
+      <text1 y="450"/> 
+    </agent>
+  </page>
+  
+	<page background="florest.png" soundtrack="florest.wav">
+    <agent img="florest_ground_1.png" x="0"   y="0" width="100" height="100"/> 
+    <agent img="florest_ground_1.png" x="99"  y="0" width="100" height="100"/> 
+    <agent img="florest_ground_1.png" x="198" y="0" width="100" height="100"/>
+    <agent img="florest_ground_1.png" x="297" y="0" width="100" height="100"/>
+    <agent img="florest_ground_1.png" x="396" y="0" width="100" height="100"/>
+    <agent img="florest_ground_1.png" x="495" y="0" width="100" height="100"/>
+    
+    <agent img="house.png"            x="-40" y="-20" width="600" height="500" />
+    <agent img="seta_direita.png"     x="420" y="12"  width="64"  height="64" on-touch="_NEXT_PAGE" />
+    
+    <agent img="girl_idle_right.png"  x="320" y="100" width="52"  height="57" />
+    <agent img="boy_idle_right.png"   x="300" y="100" width="42"  height="70"/>
+    
+    <agent text="Ao chegar na casa dos avós eles se instalaram e foram brincar e explorar os arredores." 
+                                      x="20" y="440" width="240" color="black"/>      
+  </page>
+  
+  <page background="florest.png" soundtrack="florest.wav">
+    <agent img="girl_idle_right.png" x="30"  y="100" width="52"  height="57"/>
+    <agent img="boy_idle_right.png"  x="20"  y="100" width="42"  height="70"/>
+    <agent img="Sign_3.png"          x="18"  y="285"  width="64"  height="64" on-touch="_GOTO_PAGE:16" /> 
+    <agent img="Tree.png"            x="70"  y="110" width="400" height="400"/>
+    <agent img="Tree_2.png"          x="0"   y="100" width="210" height="210"/>
+    <agent img="Mushroom_2.png"      x="415" y="290" width="30"  height="30"/>
+    <agent img="mountain.png"        x="170" y="50"  width="400" height="400" />
+    <agent img="cave_entrance.png"   x="260" y="95"  width="130" height="130" on-touch="_NEXT_PAGE"/>
+    
+    <agent img="speech_bubble_right.png"            
+           x="30" y="120" width="150" height="150"/>
+    <agent text="clickhere,clickhere, clickhere,clickhere" 
+           x="38" y="80"  width="150" height="150" on-touch="fala1" color="white">
+      <fala1 y="-300"/>
+    </agent>
+    <agent text="O será que tem lá dentro" 
+           x="40" y="-300" width="150" height="150" on-trigger="fala1">
+      <fala1 y="80" on-touch="fala2"/>
+      <fala2 text="vamos lá descobrir" x="35" y="70"/>
+    </agent>
+    
+    
+    <agent  img="leaf.png"           x="280" y="90"    width="120" height="120" on-touch="remove">
+    <remove img="leaf.png"           x="290" y="-500"  width="100" height="100"/>
+    </agent>
+   
+    <agent   img="leaf.png"          x="280" y="80"    width="120" height="120" on-touch="remove1">
+    <remove1 img="leaf.png"          x="290" y="-500"  width="100" height="100"/>
+    </agent>
+  
+    <agent   img="leaf.png"          x="240" y="60"    width="120" height="120" on-touch="remove2">
+    <remove2 img="leaf.png"          x="290" y="-500"  width="100" height="100"/>
+    </agent>
+    
+    <agent   img="leaf.png"          x="290" y="120"   width="120" height="120" on-touch="remove3">
+    <remove3 img="leaf.png"          x="290" y="-500"  width="100" height="100"/>
+    </agent>
+    
+    <agent   img="leaf.png"          x="290" y="130"   width="120" height="120" on-touch="remove4">
+    <remove4 img="leaf.png"          x="290" y="-500"  width="100" height="100"/>
+    </agent>
+    
+    <agent  img="leaf.png"           x="320" y="90"    width="120" height="120" on-touch="remove">
+    <remove img="leaf.png"           x="290" y="-500"  width="100" height="100"/>
+    </agent>
+   
+    <agent   img="leaf.png"          x="280" y="45"    width="120" height="120" on-touch="remove1">
+    <remove1 img="leaf.png"          x="290" y="-500"  width="100" height="100"/>
+    </agent>
+  
+    <agent   img="leaf.png"          x="220" y="50"    width="120" height="120" on-touch="remove2">
+    <remove2 img="leaf.png"          x="290" y="-500"  width="100" height="100"/>
+    </agent>
+    
+    <agent   img="leaf.png"          x="340" y="120"   width="120" height="120" on-touch="remove3">
+    <remove3 img="leaf.png"          x="290" y="-500"  width="100" height="100"/>
+    </agent>
+    
+    <agent   img="leaf.png"          x="250" y="110"   width="120" height="120" on-touch="remove4">
+    <remove4 img="leaf.png"          x="290" y="-500"  width="100" height="100"/>
+    </agent>
+    
+    <agent   img="Bush (3).png"          x="400" y="100"  width="60" height="30"/>
+    
+    <agent img="florest_ground_1.png" x="0"   y="0" width="100" height="100"/>
+    <agent img="florest_ground_1.png" x="99"  y="0" width="100" height="100"/> 
+    <agent img="florest_ground_1.png" x="198" y="0" width="100" height="100"/>
+    <agent img="florest_ground_1.png" x="297" y="0" width="100" height="100"/>
+    <agent img="florest_ground_1.png" x="396" y="0" width="100" height="100"/>
+    <agent img="florest_ground_1.png" x="495" y="0" width="100" height="100"/>
+    
+    <agent text="Enquanto exploravam os arredores eles encontraram a entrada de uma caverna." 
+           x="20" y="440" width="240" color="black" on-trigger="fala1">
+      <fala1 text="Toque nas folhas para limpar o caminho da caverna" 
+           x="20" y="455" width="240" color="black"/> 
+    </agent>
     
   </page>
+
+  <page background="cave1.png"   soundtrack="cave.wav">
+    <agent img="girl_idle_right.png"   x="250" y="85" width="52"  height="57"/>
+    <agent img="boy_idle_right.png"    x="230" y="85" width="42"  height="70"/>
+    <agent img="fireflies.png"     x="70"  y="70" width="100" height="70"/>
+    <agent img="fireflies.png"     x="370" y="70" width="100" height="70"/>
+    <agent img="ArrowSign.png"     x="430" y="85" width="65"  height="65" 
+           on-touch="_NEXT_PAGE"/>
+    <agent img="danger_sign.png"     x="15"  y="77"  width="65"   height="65" />
+    <agent img="DeadBush.png"      x="140"   y="80"    width="55"   height="40"/>
+    <agent img="Long Platform.png" x="-1"    y="-10"   width="300"  height="100"/>
+    <agent img="Long Platform.png" x="250"   y="-10"   width="300"  height="100"/>
+    <agent img="web_1.png"          x="0"     y="290"   width="230"  height="210"/>
+    <agent img="web_2.png"         x="380"   y="400"   width="120"  height="100"/>
+    <agent img="Bone (3).png"      x="250"   y="10"    width="70"  height="70"/>
+    <agent img="Bone (4).png"      x="100"   y="10"    width="70"  height="70"/>
+    <agent img="Bone (4).png"      x="300"   y="10"    width="70"  height="70"/>
+    
+    <agent img="speech_bubble_right.png"            
+           x="260" y="120" width="150" height="150" on-trigger="fala1"/>
+    <agent img="speech_bubble_left.png"            
+           x="110" y="-320" width="150" height="150" on-trigger="fala1">
+      <fala1 y="120"/>
+    </agent>
+    <agent text="clickhere,clickhere, clickhere,clickhere" 
+           x="265" y="80" width="150" height="150" on-touch="fala1" color="white">
+      <fala1 y="-300"/>
+    </agent>
+    <agent text="Vamos ver se tem algo legal aqui dentro" 
+             x="135" y="-300" width="120" height="150" on-trigger="fala1">
+      <fala1 y="90"/>
+    </agent>
+    <agent text="Essa caverna é enorme" 
+             x="280" y="-300" width="150" height="150" on-trigger="fala1">
+      <fala1 y="80"/>
+    </agent>
+    
+    <agent text="Explore a caverna" 
+           x="20" y="465" width="270" color="white" on-trigger="fala1"/>
+    
+    <agent text="Explore a caverna" 
+           x="20" y="465" width="270" color="white" on-trigger="fala1">
+      <fala1 text="Toque nas placas para seguir" y="430" width="150"/>
+    </agent> 
+     
+  </page>
+  
+	<page background="cave8.png"   soundtrack="cave.wav">
+    
+    
+    <agent img="fireflies.png"     x="100"    y="70"    width="100"  height="70"/>
+
+    <agent img="girl_idle_right.png"   x="30"  y="85"  width="52"  height="57" />
+    <agent img="boy_idle_right.png"    x="290" y="85" width="42"  height="70"/>
+    <agent img="Long Platform.png" x="-1"  y="-10" width="300" height="100"/>
+    <agent img="ArrowSign.png"     x="410" y="240" width="65"  height="65" on-touch="_NEXT_PAGE"/>
+    <agent img="Long Platform.png" x="370" y="150" width="300" height="100"/>
+    <agent img="Long Platform.png" x="370" y="70"  width="300" height="100"/> 
+    <agent img="fireflies.png"     x="370"    y="70"    width="100"  height="70"/>
+    <agent img="door1.png"         x="410" y="80"  width="70"  height="116" 
+           on-trigger="unlocked" >
+    <unlocked img="door2.png" x="410" y="80"  width="70"  height="116" on-touch="open"/>
+    <open img="door3.png" on-touch="_GOTO_PAGE:18"/>
+    </agent>
+    
+    <agent img="Long Platform.png" x="250" y="-10"    width="300"  height="100"/>
+    
+    <agent img="switchLock1.png"    x="385" y="140"   width="20"   height="25" on-touch="unlocked">
+    <unlocked img="switchUnlocked2.png" /> 
+    </agent>
+  <agent img="web_1.png"          x="0"     y="290"   width="230"  height="210"/>
+    <agent img="web_2.png"         x="380"   y="400"   width="120"  height="100"/>
+  <agent img="Bone (1).png"      x="100"   y="10"  width="70"  height="70"/>
+  <agent img="Bone (2).png"      x="400"   y="10"  width="70"  height="70"/>
+    <agent img="pyramidcave.png"      x="270"   y="20"  width="30"  height="30"/>
+    
+    <agent img="speech_bubble_left.png"            
+           x="200" y="120" width="150" height="150" on-trigger="fala1"/>
+    <agent img="speech_bubble_right.png"            
+           x="30" y="-320" width="150" height="150" on-trigger="fala1">
+      <fala1 y="120"/>
+    </agent>
+    <agent text="clickhere,clickhere, clickhere,clickhere" 
+           x="205" y="80" width="150" height="150" on-touch="fala1" color="white">
+      <fala1 y="-300"/>
+    </agent>
+    <agent text="Você quer tentar abrir ou explorar mais" 
+             x="45" y="-300" width="120" height="150" on-trigger="fala1">
+      <fala1 y="85"/>
+    </agent>
+    <agent text="Olha uma porta! Será como que abre a porta?" 
+             x="215" y="-300" width="120" height="150" on-trigger="fala1">
+      <fala1 y="85"/>
+    </agent>
+    
+    <agent text="Explore a caverna" 
+           x="20" y="465" width="270" color="white"/>
+    
+    <agent text="Toque nas placas para seguir" 
+           x="20" y="430" width="150" color="white" on-trigger="fala1"/>
+  
+  </page>
+  
+  <page background="cave5.png"   soundtrack="cave.wav">
+    <agent img="girl_idle_right.png"   x="30"  y="85"  width="52"  height="57" />
+    <agent img="boy_idle_right.png"    x="290" y="85"  width="42"  height="70"/>
+    <agent img="Crate.png"         x="100" y="83"   width="50"  height="50"/>
+    <agent img="Long Platform.png" x="-1"  y="-10" width="300" height="100"/>
+    <agent img="ArrowSign.png"     x="410" y="240" width="65"  height="65" on-touch="_NEXT_PAGE"/>
+    
+    <agent img="Long Platform.png" x="370" y="150" width="300" height="100"/>
+    <agent img="Long Platform.png" x="370" y="70"  width="300" height="100"/> 
+    
+    
+    
+    <agent img="door1.png"         x="410" y="80"  width="70"  height="116" 
+           on-trigger="unlocked" >
+    <unlocked img="door2.png" on-touch="open"/>
+    <open img="door3.png" on-touch="_GOTO_PAGE:9"/>
+    </agent>
+    
+    <agent img="Long Platform.png" x="250" y="-10"    width="300"  height="100"/>
+    
+    <agent img="switchLock1.png"    x="385" y="140"   width="20"   height="25" on-touch="unlocked">
+    <unlocked img="switchUnlocked2.png"/> 
+    </agent>
+    <agent img="web_1.png"          x="0"     y="290"   width="230"  height="210"/>
+    <agent img="web_2.png"         x="380"   y="400"   width="120"  height="100"/>
+    <agent img="Bone (3).png"      x="250"   y="10"  width="70"  height="70"/>
+    <agent img="Bone (4).png"      x="100"   y="10"  width="70"  height="70"/>
+    <agent img="Bone (4).png"      x="400"   y="10"  width="70"  height="70"/>
+    <agent img="snow_globe.png"     x="350"   y="15" width="33.5" height="33.5"/>
+    
+    <agent img="speech_bubble_left.png"            
+           x="200" y="120" width="150" height="150" on-trigger="fala1"/>
+    <agent img="speech_bubble_right.png"            
+           x="30" y="-320" width="150" height="150" on-trigger="fala1">
+      <fala1 y="120"/>
+    </agent>
+    <agent text="clickhere,clickhere, clickhere,clickhere" 
+           x="205" y="80" width="150" height="150" on-touch="fala1" color="white">
+      <fala1 y="-300"/>
+    </agent>
+    <agent text="Pode ser, todas são iguais mesmo" 
+             x="55" y="-300" width="120" height="150" on-trigger="fala1">
+      <fala1 y="85"/>
+    </agent>
+    <agent text="Olha outra porta! Vamos tentar abrir essa?" 
+             x="215" y="-300" width="130" height="150" on-trigger="fala1">
+      <fala1 y="85"/>
+    </agent>
+    
+    <agent text="Explore a caverna" 
+           x="20" y="465" width="270" color="white"/>
+    <agent text="Toque nas placas para seguir" 
+           x="20" y="430" width="150" color="white" on-trigger="fala1"/>
+  
+  </page>
+  
+  <page background="cave6.png"   soundtrack="cave.wav">
+    <agent img="girl_idle_right.png"   x="30"  y="85"  width="52"  height="57" />
+    <agent img="boy_idle_right.png"    x="10"  y="85" width="42"  height="70"/>
+    <agent img="Skeletoncave.png"  x="410" y="240" width="65"  height="30"/>
+    <agent img="treecave.png"      x="140" y="70"  width="200" height="200"/> 
+    <agent img="Mushroom_1.png"    x="300" y="85"  width="30"  height="25" />
+    <agent img="Long Platform.png" x="-1"  y="-10" width="300" height="100"/>
+    <agent img="Long Platform.png" x="370" y="150" width="300" height="100"/>
+    <agent img="Long Platform.png" x="370" y="70"  width="300" height="100"/> 
+    
+    <agent img="fireflies.png"     x="100"    y="370"    width="100"  height="70"/>
+    <agent img="fireflies.png"     x="387"    y="220"    width="100"  height="70"/>
+    <agent img="door1.png"         x="410" y="80"  width="70"  height="116" 
+           on-trigger="unlocked" >
+    <unlocked img="door2.png" on-touch="open"/>
+    <open img="door3.png" on-touch="_NEXT_PAGE"/>
+    </agent>
+    
+    <agent img="Long Platform.png" x="250" y="-10"    width="300"  height="100"/>
+    
+    <agent img="switchLock1.png"    x="385" y="140"   width="20"   height="25" on-touch="unlocked">
+    <unlocked img="switchUnlocked2.png"/> 
+    </agent>
+    <agent img="Bone (1).png"      x="100"   y="10"  width="70"  height="70"/>
+    <agent img="Bone (2).png"      x="400"   y="10"  width="70"  height="70"/>
+    <agent img="house_2.png"          x="270"   y="20"  width="70"  height="70"/>
+    
+    <agent img="speech_bubble_right.png"            
+           x="30" y="120" width="150" height="150"/>
+    <agent text="Mais uma porta. isso tá ficando chato, só tem portas aqui!" 
+             x="50" y="95" width="120" height="150"/>
+    
+    <agent text="Explore a caverna" 
+           x="20" y="465" width="270" color="white"/>
+    <agent text="Não há mais placas para seguir" 
+           x="20" y="430" width="150" color="white" on-trigger="fala1"/>
+  
+  
+  </page>
+  
+  <page background="cave1.png"   soundtrack="cave.wav">
+    <agent img="girl_idle_right.png"   x="250" y="85" width="52"  height="57"/>
+    <agent img="boy_idle_right.png"    x="230" y="85" width="42"  height="70"/>
+    <agent img="fireflies.png"     x="70"  y="70" width="100" height="70"/>
+    <agent img="fireflies.png"     x="370" y="70" width="100" height="70"/>
+    <agent img="ArrowSign.png"     x="430" y="85" width="65"  height="65" 
+           on-touch="_GOTO_PAGE:5"/>
+    <agent img="danger_sign.png"     x="15"  y="77"  width="65"   height="65" />
+    <agent img="DeadBush.png"      x="140"   y="80"    width="55"   height="40"/>
+    <agent img="Long Platform.png" x="-1"    y="-10"   width="300"  height="100"/>
+    <agent img="Long Platform.png" x="250"   y="-10"   width="300"  height="100"/>
+    <agent img="web_1.png"          x="0"     y="290"   width="230"  height="210"/>
+    <agent img="web_2.png"         x="380"   y="400"   width="120"  height="100"/>
+    <agent img="Bone (3).png"      x="250"   y="10"    width="70"  height="70"/>
+    <agent img="Bone (4).png"      x="100"   y="10"    width="70"  height="70"/>
+    <agent img="Bone (4).png"      x="300"   y="10"    width="70"  height="70"/>
+    
+    <agent img="speech_bubble_right.png"            
+           x="260" y="120" width="150" height="150"/>
+    <agent img="speech_bubble_left.png"            
+           x="110" y="120" width="150" height="150"/>
+    
+    <agent text="clickhere,clickhere, clickhere,clickhere" 
+           x="265" y="80" width="150" height="150" on-touch="fala1" color="white">
+      <fala1 y="-300"/>
+    </agent>
+    <agent text="Voltamos ao começo?!!!" 
+             x="290" y="80" width="120" height="150" on-touch="fala1"/>
+    <agent text="COMO???!" 
+             x="150" y="70" width="120" height="150" on-trigger="fala1" />
+    
+    <agent text="Explore a caverna" 
+           x="20" y="465" width="270" color="white"/>
+    <agent text="Toque nas placas para seguir" 
+           x="20" y="430" width="150" color="white" on-trigger="fala1"/>
+     
+  </page>
+  
+  <page background="snow.png"    soundtrack="snow.wav">
+    <agent img="snow_ground_1.png" x="0"   y="0" width="100" height="100"/> 
+    <agent img="snow_ground_1.png" x="99"  y="0" width="100" height="100"/> 
+    <agent img="snow_ground_1.png" x="198" y="0" width="100" height="100"/>
+    <agent img="snow_ground_1.png" x="297" y="0" width="100" height="100"/>
+    <agent img="snow_ground_1.png" x="396" y="0" width="100" height="100"/>
+    <agent img="snow_ground_1.png" x="495" y="0" width="100" height="100"/> 
+    
+    <agent img="snow_trees.png"     x="-80" y="97" width="364" height="280"/>
+    <agent img="snow_tree.png"      x="400" y="97" width="228" height="280"/> 
+    
+    <agent img="igloo.png"           x="20" y="99" width="256" height="100"/> 
+    <agent img="shovel.png"          x="20" y="99" width="32"  height="32" on-touch="shovel">
+      <shovel                        x="250" y="25"/>
+    </agent>
+    
+    <agent img="speech_bubble_right.png"            
+                                 x="250" y="120" width="150" height="150"/> 
+    
+    <agent text="click here, click here, click here, click here, ?" 
+             x="270" y="180" width="130" color="white" on-touch="fala1">
+      <fala1 y="-300"/>
+    </agent>
+    
+    <agent text="Essa não são as montanhas de neve que vimos na estrada?" 
+             x="270" y="-300" width="130" on-trigger="fala1">
+      <fala1 y="180"/>
+    </agent>
+      
+    <agent img="balao_de_fala_a_invertido.png"  
+             x="100" y="-300" width="150" height="150" on-trigger="fala1">
+      <fala1 y="120"/>
+    </agent>
+    
+    <agent text="Como nós vinhemos parar aqui?" 
+             x="120" y="-300" width="130" on-trigger="fala1">
+      <fala1 y="190" color="white" on-touch="fala2" on-trigger="fala2"/>
+      <fala2 color="black" on-touch="fala3"/>
+      <fala3 text="Vamos descobrir uma forma de voltar pra casa!"
+             x="115" />
+    </agent>
+    
+    <agent img="girl_idle_right.png"     x="240" y="100" width="52" height="57"/>
+    <agent img="boy_idle_right.png"  x="220" y="100" width="42" height="70"/>
+    
+    <agent img="Sign_2.png"      
+          x="420" y="99" width="64" height="64" on-touch="_GOTO_PAGE:12" on-trigger="shovel">
+      <shovel y="-500" />
+     </agent>
+    
+    <agent img="Sign_2.png"     
+          x="420" y="-200" width="64" height="64" on-touch="_NEXT_PAGE" on-trigger="shovel">
+      <shovel y="99" />
+     </agent>
+
+    <agent text="A porta os levou até um iglu em uma região montanhosa cheia de neve." 
+           x="20" y="450" width="300" color="white" /> 
+    
+    <agent img="Sign_3.png"      
+           x="394" y="162" width="64" height="64" on-touch="_GOTO_PAGE:24"/>
+    
+  </page>
+  
+  <page background="snow.png"    soundtrack="snow.wav"> 
+    
+    <agent img="snow_ground_2.png" x="297" y="198" width="100" height="100"/>
+    <agent img="snow_ground_1.png" x="396" y="198" width="100" height="100"/>
+    <agent img="snow_ground_1.png" x="495" y="198" width="100" height="100"/>
+      
+    <agent img="snow_ground_3.png" x="297" y="99"  width="100" height="100"/>
+    <agent img="snow_ground_4.png" x="396" y="99"  width="100" height="100"/>
+    <agent img="snow_ground_4.png" x="495" y="99"  width="100" height="100"/>
+    
+    <agent img="switchUnlocked2.png"   x="350" y="140"  width="20"   height="25" on-touch="ligado"/>
+    <agent img="snow_tree.png"        x="-50" y="97"  width="228" height="280"/>
+    <agent img="snow_stone.png" x="400" y="298" width="124" height="78"/>    
+    <agent img="crystal.png"       x="370" y="298" width="49"  height="39"/>     
+    <agent img="snowdrift.png" x="300" y="78"  width="373" height="200" drop-zone="clean">
+          <clean y="-500"/>    
+    </agent> 
+    
+    <agent img="snow_ground_1.png" x="0"   y="0"   width="100" height="100"/> 
+    <agent img="snow_ground_1.png" x="99"  y="0"   width="100" height="100"/> 
+    <agent img="snow_ground_1.png" x="198" y="0"   width="100" height="100"/>
+    <agent img="snow_ground_1.png" x="297" y="0"   width="100" height="100"/>
+    <agent img="snow_ground_1.png" x="396" y="0"   width="100" height="100"/>
+    <agent img="snow_ground_1.png" x="495" y="0"   width="100" height="100"/>
+    
+    <agent img="snowman.png"           x="250" y="98"  width="96" height="105"/>
+    <agent img="boy_idle_right.png"  x="180" y="100" width="42" height="70" />
+    <agent img="girl_idle_right.png"     x="200" y="100" width="52" height="57" />
+    
+    <agent img="speech_bubble_left.png"  x="110" y="150" width="150" height="150"/>
+    
+    <agent img="speech_bubble_right.png"            x="270" y="160" width="150" height="150"/> 
+    
+    <agent text="Conseguimos encontrar a pá!" 
+             x="130" y="225" width="130"/>
+    
+    <agent text="Agora vocês devem usa-lá para limpar o caminho." 
+             x="295" y="220" width="125" color="white" on-touch="fala1">
+      <fala1 color="black" on-touch="fala2"/>
+      <fala2 text="Arraste a pá em cima da neve que bloqueia o caminho." 
+             x="290" />
+    </agent>
+    
+    <agent img="speech_bubble_left.png"  
+           x="110" y="-300" width="150" height="150" on-trigger="out">
+      <out y="150"/>
+    </agent>
+    
+    <agent img="speech_bubble_right.png"            
+           x="270" y="-300" width="150" height="150" on-trigger="out"> 
+      <out y="160"/>
+    </agent>
+    
+    <agent text="De nada! Agora vocês podem voltar à cidade." 
+            x="290" y="-300" width="125" color="white" on-trigger="out">
+      <out  y="227" color="black"/>
+    </agent>
+    
+    <agent text="Obrigado boneco de neve!" 
+           x="130" y="-300" width="125" color="white" on-trigger="out">
+      <out y="225" color="black"/>
+    </agent>
+    
+    <agent text="Eles retornaram com a pá para remover a neve." 
+           x="20" y="450" width="270" color="white" on-trigger="out">
+      <out text="Toque duas vezes na porta para voltar à cidade." 
+           x="20" y="450" width="270" color="white"/>
+    </agent>  
+    
+    <agent img="shovel.png"            x="250" y="25" width="32" height="32" 
+                                   draggable="true" on-drop="clean" on-zone="out" on-trigger="out">
+      <out y="-200"/>
+    </agent> 
+    
+    <agent img="door2.png" x="375" y="-300" width="70" height="116" on-trigger="out"> 
+      <out y="99" on-touch="ligado" />
+      <ligado img="door3.png" on-touch="_NEXT_PAGE"/>
+    </agent>
+  
+  </page>
+  
+  <page background="florest.png" soundtrack="florest.wav"> 
+    
+    <agent img="florest_ground_2.png" x="297" y="198" width="100" height="100"/>
+    <agent img="florest_ground_1.png" x="396" y="198" width="100" height="100"/>
+    <agent img="florest_ground_1.png" x="495" y="198" width="100" height="100"/>
+      
+    <agent img="florest_ground_3.png" x="297" y="99"  width="100" height="100"/>
+    <agent img="florest_ground_4.png" x="396" y="99"  width="100" height="100"/>
+    <agent img="florest_ground_4.png" x="495" y="99"  width="100" height="100"/>
+    
+    <agent img="door3.png"  x="375" y="99" width="70" height="116"/>
+    <agent img="switchUnlocked2.png" x="350" y="140"  width="20"   height="25"/> 
+
+    <agent img="Tree_2.png"  x="282" y="298" width="228" height="280"/>
+    <agent img="Bush (3).png" x="370" y="298" width="124" height="78"/>    
+    <agent img="stone.png"    x="400" y="298" width="124" height="78"/>
+    
+    <agent img="Bush (2).png" x="100" y="97" width="133" height="65"/>
+    <agent img="Bush (4).png" x="50" y="97" width="133" height="65"/> 
+    
+    <agent img="florest_ground_1.png" x="0"   y="0" width="100" height="100"/> 
+    <agent img="florest_ground_1.png" x="99"  y="0" width="100" height="100"/> 
+    <agent img="florest_ground_1.png" x="198" y="0" width="100" height="100"/>
+    <agent img="florest_ground_1.png" x="297" y="0" width="100" height="100"/>
+    <agent img="florest_ground_1.png" x="396" y="0" width="100" height="100"/>
+    <agent img="florest_ground_1.png" x="495" y="0" width="100" height="100"/>
+    
+    <agent img="girl_idle_left.png"   x="355" y="100" width="52" height="57" />
+    <agent img="boy_idle_left.png"  x="320" y="100" width="42" height="70" />
+    
+    
+    <agent img="speech_bubble_right.png"            x="320" y="140" width="150" height="150" on-trigger="out"> 
+      <out y="160"/>
+    </agent> 
+    
+    <agent text="Essas portas devem ser magicas!" x="335" y="215" width="130" color="white" on-touch="fala1">
+      <fala1 x="350" y="210" width="125" color="black" on-touch="fala2" />
+      <fala2  y="210" x="350" text="Já estamos pertinho de casa!" on-touch="fala3" />
+      <fala3  y="215" x="340" text="Dá pra ver ela daqui!" on-touch="fala4"/>
+      <fala4  y="215" x="340" text="Vamos lá! Vamos voltar!"/>
+    </agent>
+    
+    <agent text="Toque na placa para voltar à cidade." 
+           x="20" y="465" width="270"/> 
+  
+    <agent img="Sign_3.png" x="18"  y="99" width="64" height="64" on-touch="_GOTO_PAGE:15" /> 
+    
+  </page>
+  
+  <page background="snow.png"    soundtrack="snow.wav"> 
+    
+    <agent img="snow_ground_2.png" x="297" y="198" width="100" height="100"/>
+    <agent img="snow_ground_1.png" x="396" y="198" width="100" height="100"/>
+    <agent img="snow_ground_1.png" x="495" y="198" width="100" height="100"/>
+      
+    <agent img="snow_ground_3.png" x="297" y="99"  width="100" height="100"/>
+    <agent img="snow_ground_4.png" x="396" y="99"  width="100" height="100"/>
+    <agent img="snow_ground_4.png" x="495" y="99"  width="100" height="100"/>
+  
+    <agent img="snow_tree.png" x="-100" y="97" width="228" height="280"/>
+    <agent img="snow_stone.png" x="400" y="298" width="124" height="78"/>    
+    <agent img="crystal.png" x="370" y="298" width="49" height="39"/>   
+    <agent img="snowdrift.png" x="300" y="78" width="373" height="200">
+          <clean y="-500"/>    
+    </agent> 
+    
+    <agent img="snow_ground_1.png" x="0"   y="0" width="100" height="100"/> 
+    <agent img="snow_ground_1.png" x="99"  y="0" width="100" height="100"/> 
+    <agent img="snow_ground_1.png" x="198" y="0" width="100" height="100"/>
+    <agent img="snow_ground_1.png" x="297" y="0" width="100" height="100"/>
+    <agent img="snow_ground_1.png" x="396" y="0" width="100" height="100"/>
+    <agent img="snow_ground_1.png" x="495" y="0" width="100" height="100"/> 
+      
+    <agent img="speech_bubble_left.png"  
+             x="110" y="150" width="150" height="150"/>
+    
+    <agent img="speech_bubble_right.png"            
+             x="270" y="160" width="150" height="150"/> 
+    
+    <agent text="Você saba uma forma de voltar para cidade." 
+             x="130" y="220" width="130" color="white" on-touch="fala1">
+      <fala1 y="-300"/>
+    </agent>
+    
+    <agent text="Você saba uma forma de voltar para cidade." 
+             x="130" y="-300" width="130" on-trigger="fala1">
+      <fala1 y="220"/>
+    </agent>
+    
+    <agent text="Você estão bem longe da cidade" 
+             x="285" y="235" width="130" color="black" on-trigger="fala1">
+      <fala1 text="Uma pessoa decia a montanha até a cidade" 
+             x="280" y="225" width="140" on-touch="fala2"/>
+      <fala2 text="por uma porta atrás de mim." 
+             x="295" y="235" on-touch="fala3"/>
+      <fala3 text="Mas agora ela está coberta de neve agora." 
+             x="290" y="230" width="130" on-touch="fala4"/>
+      <fala4 text="Lembro que ele tinha uma pá pra esses momentos." 
+             x="285" y="230" on-touch="fala5"/>
+      <fala5 text="Deve estar em um iglu aqui perto." 
+             y="235"/>
+    </agent>
+    
+    
+    <agent img="snowman.png" 
+           x="250" y="98" width="96" height="105"/>
+    <agent img="boy_idle_right.png"  
+           x="180" y="100" width="42" height="70" />
+    <agent img="girl_idle_right.png" 
+           x="200" y="100" width="52" height="57" />
+    
+    <agent text="Andando um pouco eles encontram um boneco de neve." 
+           x="20" y="450" width="270" color="white"/>  
+    
+    
+    <agent img="Sign_3.png" x="18"  y="99" width="64" height="64" on-touch="_NEXT_PAGE" /> 
+  
+  </page>
+  
+  <page background="snow.png"    soundtrack="snow.wav">
+    <agent img="snow_ground_1.png" x="0"   y="0" width="100" height="100"/> 
+    <agent img="snow_ground_1.png" x="99"  y="0" width="100" height="100"/> 
+    <agent img="snow_ground_1.png" x="198" y="0" width="100" height="100"/>
+    <agent img="snow_ground_1.png" x="297" y="0" width="100" height="100"/>
+    <agent img="snow_ground_1.png" x="396" y="0" width="100" height="100"/>
+    <agent img="snow_ground_1.png" x="495" y="0" width="100" height="100"/> 
+    
+    <agent img="snow_trees.png"     x="-80" y="97" width="364" height="280"/>
+    <agent img="snow_tree.png"      x="400" y="97" width="228" height="280"/> 
+    
+    <agent img="igloo.png"       x="20" y="99" width="256" height="100"/> 
+    <agent img="shovel.png"          x="20" y="99" width="32"  height="32" on-touch="pa">
+      <pa                        x="250" y="25"/>
+    </agent>
+    
+    <agent img="girl_idle_right.png"     x="240" y="100" width="52" height="57"/>
+    <agent img="boy_idle_right.png"  x="220" y="100" width="42" height="70"/>
+    
+    <agent img="Sign_2.png"      
+          x="420" y="99" width="64" height="64" on-touch="_NEXT_PAGE" on-trigger="pa">
+      <pa y="-500" />
+     </agent>
+    
+    <agent img="Sign_2.png"     
+          x="420" y="-200" width="64" height="64" on-touch="_GOTO_PAGE:10" on-trigger="pa">
+      <pa y="99" />
+     </agent>
+    
+    <agent img="Sign_3.png"      
+           x="394" y="162" width="64" height="64" on-touch="_GOTO_PAGE:24"/>
+
+    <agent text="Procure pela pá" 
+           x="20" y="465" width="300" color="white"/>    
+  </page>
+  
+  <page background="snow.png"    soundtrack="snow.wav"> 
+    
+    <agent img="snow_ground_2.png" x="297" y="198" width="100" height="100"/>
+    <agent img="snow_ground_1.png" x="396" y="198" width="100" height="100"/>
+    <agent img="snow_ground_1.png" x="495" y="198" width="100" height="100"/>
+      
+    <agent img="snow_ground_3.png" x="297" y="99"  width="100" height="100"/>
+    <agent img="snow_ground_4.png" x="396" y="99"  width="100" height="100"/>
+    <agent img="snow_ground_4.png" x="495" y="99"  width="100" height="100"/>
+  
+    <agent img="snow_tree.png" x="-100" y="97" width="228" height="280"/>
+    <agent img="snow_stone.png" x="400" y="298" width="124" height="78"/>    
+    <agent img="crystal.png" x="370" y="298" width="49" height="39"/>   
+    <agent img="snowdrift.png" x="300" y="78" width="373" height="200">
+          <clean y="-500"/>    
+    </agent> 
+    
+    <agent img="snow_ground_1.png" x="0"   y="0" width="100" height="100"/> 
+    <agent img="snow_ground_1.png" x="99"  y="0" width="100" height="100"/> 
+    <agent img="snow_ground_1.png" x="198" y="0" width="100" height="100"/>
+    <agent img="snow_ground_1.png" x="297" y="0" width="100" height="100"/>
+    <agent img="snow_ground_1.png" x="396" y="0" width="100" height="100"/>
+    <agent img="snow_ground_1.png" x="495" y="0" width="100" height="100"/> 
+    
+    <agent img="speech_bubble_right.png"            
+             x="270" y="160" width="150" height="150"/> 
+    
+    <agent text="Vocês tem que encontrar a pá para abrir o caminho" 
+             x="290" y="220" width="130" color="black" />
+    
+    <agent img="snowman.png" 
+           x="250" y="98" width="96" height="105"/>
+    <agent img="boy_idle_right.png"  
+           x="180" y="100" width="42" height="70" />
+    <agent img="girl_idle_right.png" 
+           x="200" y="100" width="52" height="57" />
+    
+    <agent text="Volte e procure pela pá" 
+           x="20" y="465" width="270" color="white"/> 
+        
+    <agent img="Sign_3.png" x="18"  y="99" width="64" height="64" on-touch="_PREV_PAGE" /> 
+  
+  </page>
+  
+  <page background="florest.png" soundtrack="end_theme.wav">
+    <agent img="florest_ground_1.png" x="0"   y="0" width="100" height="100"/> 
+    <agent img="florest_ground_1.png" x="99"  y="0" width="100" height="100"/> 
+    <agent img="florest_ground_1.png" x="198" y="0" width="100" height="100"/>
+    <agent img="florest_ground_1.png" x="297" y="0" width="100" height="100"/>
+    <agent img="florest_ground_1.png" x="396" y="0" width="100" height="100"/>
+    <agent img="florest_ground_1.png" x="495" y="0" width="100" height="100"/>
+    
+    <agent text="Eles voltaram pra casa e contaram suas aventuras para os avós." 
+           x="25" y="240" font-size="25" width="500" color="black" on-touch="text2">
+      <text2 text="Quando eles retornaram ao local da porta ela não estava mais lá." on-touch="text3"/>
+      <text3 text="Mas eles não esqueçerão dessa aventura" x="90" width="400" on-touch="end"/>
+      <end text="Fim!" x="230" y="250"/>
+      
+    </agent>
+    
+    <agent img="reset_button.png"     x="420" y="12"  width="64"  height="64" on-touch="_GOTO_PAGE:1" />
+  </page>
+  
+  <page background="florest.png" soundtrack="end_theme.wav">
+    <agent img="florest_ground_1.png" x="0"   y="0" width="100" height="100"/> 
+    <agent img="florest_ground_1.png" x="99"  y="0" width="100" height="100"/> 
+    <agent img="florest_ground_1.png" x="198" y="0" width="100" height="100"/>
+    <agent img="florest_ground_1.png" x="297" y="0" width="100" height="100"/>
+    <agent img="florest_ground_1.png" x="396" y="0" width="100" height="100"/>
+    <agent img="florest_ground_1.png" x="495" y="0" width="100" height="100"/>
+    
+    <agent text="Eles voltaram pra casa e nada de interesante tinha acontecido" 
+           x="40" y="240" font-size="25" width="500" on-touch="end">
+      <end y="-300"/>
+      </agent>
+      
+    <agent text="Fim?" 
+           x="230" y="-300" on-trigger="end" on-touch="end2" font-size="25" width="500">
+      <end y="250" on-touch="end2"/>
+      <end2 y="-300"/>
+        </agent>
+    
+    <agent text="Beleza você achou o Ester Egg vamos voltar pra historia agora" 
+           x="50" y="-300" font-size="25" width="450" on-trigger="end2" on-touch="_NEXT_PAGE">
+      <end2 y="240"/>
+      </agent>
+    
+    <agent img="reset_button.png"     x="420" y="12"  width="64"  height="64" on-touch="_GOTO_PAGE:1" />
+  </page>
+  
+  <page background="florest.png" soundtrack="florest.wav">
+    <agent img="girl_idle_right.png" x="30"  y="100" width="52"  height="57"/>
+    <agent img="boy_idle_right.png"  x="20"  y="100" width="42"  height="70"/> 
+    <agent img="Tree.png"            x="70"  y="110" width="400" height="400"/>
+    <agent img="Tree_2.png"          x="0"   y="100" width="210" height="210"/>
+    <agent img="Mushroom_2.png"      x="415" y="290" width="30"  height="30"/>
+    <agent img="mountain.png"        x="170" y="50"  width="400" height="400" />
+    <agent img="cave_entrance.png"   x="260" y="95"  width="130" height="130" on-touch="_GOTO_PAGE:4"/>
+    
+    <agent img="speech_bubble_right.png"            
+           x="30" y="120" width="150" height="150"/>
+    <agent text="clickhere,clickhere, clickhere,clickhere" 
+           x="38" y="80" width="150" height="150" on-touch="fala1" color="white">
+      <fala1 y="-300"/>
+    </agent>
+    <agent text="O será que tem lá dentro" 
+           x="40" y="-300" width="150" height="150" on-trigger="fala1">
+      <fala1 y="80" on-touch="fala2"/>
+      <fala2 text="vamos lá descobrir" x="35" y="70"/>
+    </agent>
+    
+    
+    <agent  img="leaf.png"           x="280" y="90"    width="120" height="120" on-touch="remove">
+    <remove img="leaf.png"           x="290" y="-500"  width="100" height="100"/>
+    </agent>
+   
+    <agent   img="leaf.png"          x="280" y="80"    width="120" height="120" on-touch="remove1">
+    <remove1 img="leaf.png"          x="290" y="-500"  width="100" height="100"/>
+    </agent>
+  
+    <agent   img="leaf.png"          x="240" y="60"    width="120" height="120" on-touch="remove2">
+    <remove2 img="leaf.png"          x="290" y="-500"  width="100" height="100"/>
+    </agent>
+    
+    <agent   img="leaf.png"          x="290" y="120"   width="120" height="120" on-touch="remove3">
+    <remove3 img="leaf.png"          x="290" y="-500"  width="100" height="100"/>
+    </agent>
+    
+    <agent   img="leaf.png"          x="290" y="130"   width="120" height="120" on-touch="remove4">
+    <remove4 img="leaf.png"          x="290" y="-500"  width="100" height="100"/>
+    </agent>
+    
+    <agent  img="leaf.png"           x="320" y="90"    width="120" height="120" on-touch="remove">
+    <remove img="leaf.png"           x="290" y="-500"  width="100" height="100"/>
+    </agent>
+   
+    <agent   img="leaf.png"          x="280" y="45"    width="120" height="120" on-touch="remove1">
+    <remove1 img="leaf.png"          x="290" y="-500"  width="100" height="100"/>
+    </agent>
+  
+    <agent   img="leaf.png"          x="220" y="50"    width="120" height="120" on-touch="remove2">
+    <remove2 img="leaf.png"          x="290" y="-500"  width="100" height="100"/>
+    </agent>
+    
+    <agent   img="leaf.png"          x="340" y="120"   width="120" height="120" on-touch="remove3">
+    <remove3 img="leaf.png"          x="290" y="-500"  width="100" height="100"/>
+    </agent>
+    
+    <agent   img="leaf.png"          x="250" y="110"   width="120" height="120" on-touch="remove4">
+    <remove4 img="leaf.png"          x="290" y="-500"  width="100" height="100"/>
+    </agent>
+    
+    <agent   img="Bush (3).png"          x="400" y="100"  width="60" height="30"/>
+    
+    <agent img="florest_ground_1.png" x="0"   y="0" width="100" height="100"/>
+    <agent img="florest_ground_1.png" x="99"  y="0" width="100" height="100"/> 
+    <agent img="florest_ground_1.png" x="198" y="0" width="100" height="100"/>
+    <agent img="florest_ground_1.png" x="297" y="0" width="100" height="100"/>
+    <agent img="florest_ground_1.png" x="396" y="0" width="100" height="100"/>
+    <agent img="florest_ground_1.png" x="495" y="0" width="100" height="100"/>
+    
+    <agent text="Enquanto exploravam os arredores eles encontraram a entrada de uma caverna." 
+           x="20" y="440" width="240" color="black" on-trigger="fala1">
+      <fala1 text="Toque nas folhas para limpar o caminho da caverna" 
+           x="20" y="455" width="240" color="black"/> 
+    </agent>
+    
+  </page>
+  
+  <page background="bgdesert.png" soundtrack="desert.wav">
+    <agent img="girl_idle_right.png"   x="20"   y="95" width="52"    height="57"/>
+    <agent img="boy_idle_right.png"  x="0"  y="95" width="42"  height="70"/>
+    <agent img="Bush (1).png"      x="150" y="93" width="220"   height="160"/>
+    <agent img="Skeleton.png"      x="70"  y="92" width="60"    height="25" />
+    <agent img="Cactus (1).png"    x="370"   y="95" width="52"  height="57" />
+
+    <agent img="desert_clouds.png" x="-30"  y="-50"  width="565" height="565"/>
+    <agent img="Sign_2.png"        x="435"   y="95" width="52"  height="57" on-touch="_NEXT_PAGE"/>
+    <agent img="desert_ground.png" x="0"  y="-5"  width="100" height="100" />
+    <agent img="desert_ground.png" x="99"  y="-5" width="100" height="100"/> 
+    <agent img="desert_ground.png" x="198" y="-5" width="100" height="100"/>
+    <agent img="desert_ground.png" x="297" y="-5" width="100" height="100"/>
+    <agent img="desert_ground.png" x="396" y="-5" width="100" height="100"/>
+    <agent img="desert_ground.png" x="495" y="-5" width="100" height="100"/>
+    <agent img="chest.png" x="250" y="3" width="70" height="70"/>
+    <agent img="Bone (1).png"      x="100"   y="10"  width="70"  height="70"/>
+    <agent img="Bone (2).png"      x="400"   y="10"  width="70"  height="70"/>
+    
+    <agent img="speech_bubble_right.png"            
+           x="30" y="120" width="150" height="150"/>
+    <agent text="clickhere,clickhere, clickhere,clickhere" 
+           x="38" y="80"  width="150" height="150" on-touch="fala1" color="white">
+      <fala1 y="-300"/>
+    </agent>
+    <agent text="Como chegamos no deserto? " 
+           x="40" y="-300" width="140" height="150" on-trigger="fala1">
+      <fala1 x="40" y="80" on-touch="fala2"/>
+      <fala2 text="Só tinha mato a um tempo atás." x="45" y="80" width="130" on-touch="fala3"/>
+      <fala3 x="55" y="85" text="Vamos achar uma forma de sair daqui." on-touch="fala4" />
+      <fala4 x="65" y="80" text="Não quero torrar aqui." width="100"/>
+    </agent>
+    
+    <agent text="A porta os levou para uma região seca, o deserto." 
+           x="20" y="455" width="240" color="black" on-trigger="fala1">
+      <fala1 text="Busque uma forma de sair do deserto" 
+           x="20" y="455" width="240" color="black"/> 
+    </agent>
+    </page>
+  
+  <page background="bgdesert.png" soundtrack="desert.wav">
+    <agent img="desert_pyramids.png"    x="-30"   y="-43" width="560"  height="570" />
+    <agent img="treecave.png"     x="10" y="95" width="200" height="205"/>
+    <agent img="girl_idle_right.png"   x="20"   y="95" width="52"    height="57"/>
+    <agent img="boy_idle_right.png"  x="0"  y="95" width="42"  height="70"/>
+    <agent img="Golem1.png"          x="310" y="61"  width="200"   height="200"/>  
+    <agent img="desert_ground.png" x="0"   y="-5" width="100" height="100" />
+    <agent img="desert_ground.png" x="99"  y="-5" width="100" height="100"/> 
+    <agent img="desert_ground.png" x="198" y="-5" width="100" height="100"/>
+    <agent img="desert_ground.png" x="297" y="-5" width="100" height="100"/>
+    <agent img="desert_ground.png" x="396" y="-5" width="100" height="100"/>
+    <agent img="desert_ground.png" x="495" y="-5" width="100" height="100"/>
+    <agent img="dinosaurskeleton.png" x="320" y="-15" width="120" height="80"/>
+    <agent img="skull.png" x="110" y="15" width="50" height="50"/>
+    <agent img="desert_stone.png"   x="110" y="95" width="50" height="25"/>
+    <agent img="DeadBush.png"   x="200" y="95" width="50" height="25"/>
+    <agent img="Cactus (3).png"   x="270" y="95" width="70" height="75"/>
+    <agent img="DeadBush.png"   x="450" y="95" width="50" height="25"/>
+    <agent img="Bone (3).png"      x="0"   y="10"    width="70"  height="70"/>
+    <agent img="Bone (4).png"      x="40"   y="10"    width="70"  height="70"/>
+    <agent img="Bone (4).png"      x="420"   y="10"    width="70"  height="70"/> 
+    
+    <agent img="Tetx_1.png"  x="0" y="410"      width="500"   height="50"/>
+    <agent img="yes.png"      x="100"  y="320.4"  width="110"   height="65" on-touch="_NEXT_PAGE"/>
+    <agent img="no.png"  x="300" y="320"    width="110"   height="65" on-touch="_GOTO_PAGE:23"/>
+    
+    <agent img="speech_bubble_right.png"            
+           x="30" y="120" width="150" height="150"/>
+    <agent text="clickhere,clickhere, clickhere,clickhere" 
+           x="38" y="80"  width="150" height="150" on-touch="fala1" color="white">
+      <fala1 y="-300"/>
+    </agent>
+    <agent text="O que você acha que devemos fazer." 
+           x="40" y="-300" width="140" height="150" on-trigger="fala1">
+      <fala1 x="40" y="80" on-touch="fala2"/>
+      <fala2 text="Tentar o desafio? Não temos muita escolha mesmo." x="45" y="88" width="130" on-touch="fala3"/>
+    </agent>
+    
+  </page>
+  
+  <page background="inside_tomb.jpg" soundtrack="desert.wav">
+    
+    <agent img="girl_idle_right.png"     x="200"   y="120"  width="52"   height="57"/>
+    <agent img="boy_idle_right.png"  x="180"  y="120" width="42"  height="70"/>
+    <agent img="golemtumba.png"          x="310" y="82"  width="200"   height="200"/>  
+    <agent img="Tetx_2.png"  x="10" y="400"  width="485"   height="75"/>
+    
+    <agent img="Ra.png"      x="40"  y="320.4"  width="110"   height="65" on-touch="_GOTO_PAGE:22"/>
+    <agent img="Osiris.png"  x="200" y="320"    width="110"   height="65" on-touch="_GOTO_PAGE:21"/>
+    <agent img="Anubis.png"  x="350" y="320"    width="110"   height="65" on-touch="_GOTO_PAGE:21"/>
+    
+    <agent img="speech_bubble_left.png"            
+           x="60" y="-320" width="150" height="150" on-trigger="fala1">
+      <fala1 y="150"/>
+    </agent>
+    
+    <agent img="speech_bubble_right.png"            
+           x="210" y="150" width="150" height="150"/>
+    <agent text="clickhere,clickhere, clickhere,clickhere" 
+           x="219" y="110"  width="150" height="150" on-touch="fala1" color="white">
+      <fala1 y="-300"/>
+    </agent>
+    <agent text="Qual delas você acha que é a correta? " 
+           x="230" y="-300" width="140" height="150" on-trigger="fala1">
+      <fala1 y="115"/>
+    </agent>
+    <agent text="Todas pareçem igual pra mim" 
+           x="80" y="-300" width="140" height="150" on-trigger="fala1">
+      <fala1 y="110"/>
+    </agent>
+  
+  
+  </page>
+  
+  <page background="bgdesert.png" soundtrack="desert.wav">
+    
+    <agent img="desert_pyramids.png"    x="-30"   y="-43" width="560"  height="570" />
+    <agent img="treecave.png"     x="10" y="95" width="200" height="205"/>
+    <agent img="girl_idle_right.png"   x="20"   y="95" width="52"    height="57"/>
+    <agent img="boy_idle_right.png"  x="0"  y="95" width="42"  height="70"/>
+    <agent img="Golem1.png"          x="310" y="61"  width="200"   height="200"/>  
+    <agent img="desert_ground.png" x="0"   y="-5" width="100" height="100" />
+    <agent img="desert_ground.png" x="99"  y="-5" width="100" height="100"/> 
+    <agent img="desert_ground.png" x="198" y="-5" width="100" height="100"/>
+    <agent img="desert_ground.png" x="297" y="-5" width="100" height="100"/>
+    <agent img="desert_ground.png" x="396" y="-5" width="100" height="100"/>
+    <agent img="desert_ground.png" x="495" y="-5" width="100" height="100"/>
+    <agent img="dinosaurskeleton.png" x="320" y="-15" width="120" height="80"/>
+    <agent img="skull.png" x="110" y="15" width="50" height="50"/>
+    <agent img="desert_stone.png"   x="110" y="95" width="50" height="25"/>
+    <agent img="DeadBush.png"   x="200" y="95" width="50" height="25"/>
+    <agent img="Cactus (3).png"   x="270" y="95" width="70" height="75"/>
+    <agent img="DeadBush.png"   x="450" y="95" width="50" height="25"/>
+    <agent img="Bone (3).png"      x="0"   y="10"    width="70"  height="70"/>
+    <agent img="Bone (4).png"      x="40"   y="10"    width="70"  height="70"/>
+    <agent img="Bone (4).png"      x="420"   y="10"    width="70"  height="70"/> 
+    
+    <agent img="Tetx_3.png"  x="0" y="400"      width="500"   height="71"/>
+    <agent img="yes.png"      x="100"  y="320.4"  width="110"   height="65" on-touch="_PREV_PAGE"/>
+    <agent img="no.png"  x="300" y="320"    width="110"   height="65" on-touch="_GOTO_PAGE:23"/>
+    
+    <agent img="speech_bubble_right.png"            
+           x="30" y="120" width="150" height="150"/>
+    <agent text="clickhere,clickhere, clickhere,clickhere" 
+           x="38" y="80"  width="150" height="150" on-touch="fala1" color="white">
+      <fala1 y="-300"/>
+    </agent>
+    
+    <agent text="Acho que sim, não tem muito o que fazer." 
+           x="40" y="-300" width="120" height="150" on-trigger="fala1">
+      <fala1 x="50" y="90" on-touch="fala2"/>
+    </agent>
+  </page>
+  
+  <page background="bgdesert (2).png" soundtrack="desert.wav">
+    <agent img="desert_clouds.png" x="-30"  y="0"  width="565" height="565"/>
+    <agent img="Cactus (3).png"     x="110" y="95" width="70" height="75"/>
+    <agent img="Cactus (1).png"     x="25"  y="95"  width="90" height="95"/>
+    <agent img="girl_idle_right.png"   x="20"   y="95" width="52"    height="57"/>
+    <agent img="boy_idle_right.png"  x="0"  y="95" width="42"  height="70"/>
+    
+    <agent img="desert_ground_2.png" x="400" y="193" width="100" height="100"/>
+    <agent img="desert_ground_4.png" x="400" y="94" width="100" height="100"/>
+    
+    
+    <agent img="door1.png" x="425" y="94" width="70"  height="116" on-trigger="open">
+      <open img="door2.png"  on-touch="unlocked"/>
+      <unlocked img="door3.png" on-touch="_GOTO_PAGE:11"/>
+    </agent>
+    
+    <agent img="bridge_up_1.png" x="395"  y="95"   width="25"  height="90" on-trigger="open">
+      <open img="bridge_down_1.png"  x="297"  y="69"   width="100"  height="25" />
+     </agent>
+   
+    
+    <agent img="bridge_up_2.png" x="175"  y="95"   width="25"  height="90" on-trigger="open">
+      <open img="bridge_down_2.png"  x="197.7"  y="69"   width="100"  height="25" on-trigger="open" />
+    </agent>  
+    
+    <agent img="desert_ground.png" x="0"   y="-5" width="100" height="100" />
+    <agent img="desert_ground_3.png" x="99"  y="-5" width="100" height="100"/>    
+    <agent img="Tile_27.png" x="198" y="31" width="100" height="100"/>
+    <agent img="Tile_27.png" x="297" y="31" width="100" height="100"/>
+    <agent img="desert_ground_2.png" x="396" y="-5" width="100" height="100"/>
+    <agent img="desert_ground_1.png" x="495" y="-5" width="100" height="100"/>
+    <agent img="Tile_28.png" x="198" y="-70" width="100" height="100"/>
+    <agent img="Tile_28.png" x="297" y="-70" width="100" height="100"/>
+    <agent img="Skeletoncave.png"  x="430"   y="292"  width="55" height="32"/>
+    <agent img="Bone (1).png"      x="430"   y="210"  width="55" height="58"/>
+    <agent img="Bone (3).png"      x="0"   y="10"    width="70"  height="70"/>
+    <agent img="Bone (4).png"      x="40"   y="10"    width="70"  height="70"/>
+    <agent img="Bone (4).png"      x="420"   y="10"    width="70"  height="70"/>
+    
+    <agent img="speech_bubble_right.png"            
+           x="30" y="120" width="150" height="150"/>
+    <agent text="clickhere,clickhere, clickhere,clickhere" 
+           x="38" y="80"  width="150" height="150" on-touch="fala1" color="white">
+      <fala1 y="-300"/>
+    </agent>
+    <agent text="Acho que se nós puxarmos a alavanca..." 
+           x="40" y="-300" width="140" height="150" on-trigger="fala1">
+      <fala1 x="48" y="88" on-touch="fala2"/>
+      <fala2 text="... chegaremos no outro lado." x="45" y="80" width="130"/>
+    </agent>
+    
+        <agent img="lever_2.png" x="110" y="90" width="40" height="60" on-touch="open">
+      <open img="lever_1.png" x="95" y="90" width="55" height="40"/>
+      </agent>
+    
+      <agent text="Tente descer a ponte e abrir a porta." 
+           x="20" y="440" width="240" color="black" on-trigger="fala1"/>
+  </page>
+  
+  <page background="florest.png" soundtrack="end_theme_2.wav">
+    <agent img="florest_ground_1.png" x="0"   y="0" width="100" height="100"/> 
+    <agent img="florest_ground_1.png" x="99"  y="0" width="100" height="100"/> 
+    <agent img="florest_ground_1.png" x="198" y="0" width="100" height="100"/>
+    <agent img="florest_ground_1.png" x="297" y="0" width="100" height="100"/>
+    <agent img="florest_ground_1.png" x="396" y="0" width="100" height="100"/>
+    <agent img="florest_ground_1.png" x="495" y="0" width="100" height="100"/>
+    
+    <agent text="Eles ficaram presos no deserto" 
+           x="50" y="250" font-size="25" width="500" on-touch="end">
+      <end y="-300"/>
+      </agent>
+      
+    <agent text="Fim!" 
+           x="230" y="-300" on-trigger="end" on-touch="end2" font-size="25" width="500">
+      <end y="250" />
+      <end2 y="-300"/>
+      
+    </agent>
+    
+    <agent img="reset_button.png"     x="420" y="12"  width="64"  height="64" on-touch="_GOTO_PAGE:1" />
+  </page>
+  
+  <page background="florest.png" soundtrack="end_theme_2.wav">
+    <agent img="florest_ground_1.png" x="0"   y="0" width="100" height="100"/> 
+    <agent img="florest_ground_1.png" x="99"  y="0" width="100" height="100"/> 
+    <agent img="florest_ground_1.png" x="198" y="0" width="100" height="100"/>
+    <agent img="florest_ground_1.png" x="297" y="0" width="100" height="100"/>
+    <agent img="florest_ground_1.png" x="396" y="0" width="100" height="100"/>
+    <agent img="florest_ground_1.png" x="495" y="0" width="100" height="100"/>
+    
+    <agent text="Eles ficaram vagando na neve." 
+           x="50" y="250" font-size="25" width="500" on-touch="end">
+      <end y="-300"/>
+      </agent>
+      
+    <agent text="Fim!" 
+           x="230" y="-300" on-trigger="end" on-touch="end2" font-size="25" width="500">
+      <end y="250" />
+      <end2 y="-300"/>
+      
+    </agent>
+    
+    <agent img="reset_button.png"     x="420" y="12"  width="64"  height="64" on-touch="_GOTO_PAGE:1" />
+  </page>
+  
 </fable>
